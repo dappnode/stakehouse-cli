@@ -12,6 +12,7 @@ import { ethers } from "ethers";
     .requiredOption("--network <string>", "mainnet or goerli")
     .requiredOption("--ethUrl <string>", "The Ethereum RPC URL")
     .requiredOption("--privateKey <string>", "The private key of the account")
+    .command()
     .requiredOption(
       "--command <string>",
       "getDaoAddress, getSavETHVaultAddress, isWhitelistingEnabled, isNodeRunnerWhitelisted, isNodeRunnerBanned, updateWhitelisting, updateNodeRunnerWhitelistStatus, getNetworkFeeRecipient"
